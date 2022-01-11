@@ -15,5 +15,23 @@ p {font-family:Georgia, serif;font-size:14px;font-style:normal;font-weight:norma
 <h1>This is a test by JKStudios</h1>
 <p>Test by JKStudios</p>
 <script src="https://crossbrowdy.com/CrossBrowdy/CrossBrowdy.js" type="text/javascript" language="javascript"></script><!-- "type" and "language" parameters for legacy clients. -->
+  script type="text/javascript" language="javascript">
+		<!--
+			CB_init(main); //It will call the "main" function when ready.
+
+			//This function will be called when CrossBrowdy is ready:
+			function main()
+			{
+				//Now, you can start using CrossBrowdy here...
+				CB_console("CrossBrowdy started!");
+			}
+		// -->
+		</script>
+	</head>
+	<body>
+		<!-- The "CB_console" element will be used automatically in the case that the client does not support console: -->
+		<div id="CB_console" style="display:none; visibility:hidden; overflow:scroll;">
+			<span style="font-weight:bold;">Console:</span><br />
+		</div>
 </body>
 </html>
